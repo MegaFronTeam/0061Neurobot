@@ -1,11 +1,25 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+	+b.headerBlock#headerBlock&attributes(attributes)
+		.container.section
+			+b.section-title
+				h1 Нейробот
+				p Самый быстрый метод обучить нейронную сеть для трейдинга!
+			a.btn.btn-primary(href="#") Получить доступ прямо сейчас 
+			img(src="img/header-img.png", alt="").head-img
+			+e.slider--js.swiper.slider-auto-js
+				.swiper-wrapper
+					mixin item(i,t)
+						+e.slide.swiper-slide
+							+b.headerBlock-item
+								img(src=`img/head-i-${i}.svg`, alt="")
+								+e.text!= t
+					+item(1, ` Для любого  рынка`)
+					+item(2, `Без программирования, прямо в Metatrader 5 `)
+					+item(3, ` Быстрый запуск в автоматические торги`)
+					+item(4, ` Создание портфеля умных торговых роботов`)
+					+item(5, ` Настройка на доходность от 30% до 100% годовых`)
+					+item(6, `Надежная защита депозита от глубоких просадок `)
+			
+
 	// end headerBlock

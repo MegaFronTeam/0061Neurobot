@@ -6,7 +6,9 @@
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
-		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 		<link href="css/main.min.css" rel="stylesheet"/>
 		<script>
 			function addBlock(elem) {
@@ -21,15 +23,21 @@
 			}
 		</script>
 	</head>
-	<body class="main-page">
+	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
 			<!-- start topLine-->
 			<div class="topLine section" id="topLine">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>topLine</h2>
+					<div class="topLine__row row">
+						<div class="col-md-auto col">
+							<div class="topLine__logo"><img src="img/logo.svg" alt="" loading="lazy"/>
+							</div>
+						</div>
+						<div class="col-md-auto col-auto order-md-last"><a class="btn btn-sm btn-outline-white" href="#">Получить доступ сейчас</a></div>
+						<div class="col-md d-none d-md-block">
+							<div class="small">Умный автоматический источник дохода</div>
+						</div>
 					</div>
-					<div class="row"></div>
 				</div>
 			</div>
 			<!-- end topLine-->
@@ -38,28 +46,72 @@
 					<use xlink:href="img/svg/sprite.svg#truck"></use>
 				</svg>
 				<!-- start headerBlock-->
-				<div class="headerBlock section" id="headerBlock">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd</h2>
-							<svg class="icon icon-telegram ">
-								<use xlink:href="img/svg/sprite.svg#telegram"></use>
-							</svg>
-							<svg class="iconC iconC-telegram ">
-								<use xlink:href="img/svg/spriteC.svg#telegram"></use>
-							</svg>
+				<div class="headerBlock" id="headerBlock">
+					<div class="container section">
+						<div class="section-title">
+							<h1>Нейробот</h1>
+							<p>Самый быстрый метод обучить нейронную сеть для трейдинга!</p>
+						</div><a class="btn btn-primary" href="#">Получить доступ прямо сейчас </a><img class="head-img" src="img/header-img.png" alt=""/>
+						<div class="headerBlock__slider headerBlock__slider--js swiper slider-auto-js">
+							<div class="swiper-wrapper">
+									<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock-item"><img src="img/head-i-1.svg" alt=""/>
+											<div class="headerBlock-item__text"> Для любого  рынка
+											</div>
+										</div>
+									</div>
+									<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock-item"><img src="img/head-i-2.svg" alt=""/>
+											<div class="headerBlock-item__text">Без программирования, прямо в Metatrader 5 
+											</div>
+										</div>
+									</div>
+									<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock-item"><img src="img/head-i-3.svg" alt=""/>
+											<div class="headerBlock-item__text"> Быстрый запуск в автоматические торги
+											</div>
+										</div>
+									</div>
+									<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock-item"><img src="img/head-i-4.svg" alt=""/>
+											<div class="headerBlock-item__text"> Создание портфеля умных торговых роботов
+											</div>
+										</div>
+									</div>
+									<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock-item"><img src="img/head-i-5.svg" alt=""/>
+											<div class="headerBlock-item__text"> Настройка на доходность от 30% до 100% годовых
+											</div>
+										</div>
+									</div>
+									<div class="headerBlock__slide swiper-slide">
+										<div class="headerBlock-item"><img src="img/head-i-6.svg" alt=""/>
+											<div class="headerBlock-item__text">Надежная защита депозита от глубоких просадок 
+											</div>
+										</div>
+									</div>
+							</div>
 						</div>
-						<div class="row"></div>
 					</div>
 				</div>
 				<!-- end headerBlock-->
 				<!-- start sWhy-->
 				<section class="sWhy section" id="sWhy">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sWhy</h2>
+						<div class="section-title">
+							<h2>Зачем нужна <span>нейросеть</span>  в&nbsp;трейдинге?</h2>
+							<p class="text-primary">Что может делать нейронная сеть, чего нельзя сделать классическими методами трейдинга?</p>
 						</div>
-						<div class="sWhy__row row">
+						<div class="sWhy__frame-wrap">
+							<div class="sWhy__frame"><img src="img/frame-left.png" alt="" loading="lazy"/>
+								<p>Нейронная сеть отлично справляется с задачей поиска ценовых паттернов.</p>
+							</div>
+						</div>
+						<div class="sWhy__text">
+							<p>Трейдеры широко используют различные графические, свечные, технические и другие паттерны, основанные на поведении цены.</p>
+							<p>Фракталы, свечи доджи, ценовые уровни, фигура голова и плечи – это все примеры визуальных ценовых паттернов. Их можно разглядеть на графике.</p>
+							<p><strong>Паттернов, которые не видны глазу – в тысячи раз больше, чем тех, которые трейдеры используют в ручной торговле!</strong></p>
+							<p>Нейросети способны находить такие скрытые паттерны и распознавать их в реальном времени.</p>
 						</div>
 					</div>
 				</section>
@@ -68,9 +120,35 @@
 				<section class="sRealSlider section" id="sRealSlider">
 					<div class="container">
 						<div class="section-title text-center">
-							<h2>sRealSlider</h2>
+							<p>Смотрите, в какие шикарные сделки вошла нейронная сеть с помощью своих скрытых паттернов.</p>
+							<h3>Это реальные сделки, совершенные Нейроботом:</h3>
 						</div>
-						<div class="sRealSlider__row row">
+						<div class="def-slider def-swiper-js">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="def-slider__slide swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img class="res-i" src="img/slide.png" alt="" loading="lazy"/>
+									</div>
+									<div class="def-slider__slide swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img class="res-i" src="img/slide.png" alt="" loading="lazy"/>
+									</div>
+									<div class="def-slider__slide swiper-slide" data-fancybox="modal-slider-rev" data-src="img/slide.png"><img class="res-i" src="img/slide.png" alt="" loading="lazy"/>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+								<svg class="icon icon-chevron-left ">
+									<use xlink:href="img/svg/sprite.svg#chevron-left"></use>
+								</svg>
+							</div>
+							<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+								<svg class="icon icon-chevron-right ">
+									<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+								</svg>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="sRealSlider__footer text-center">
+							<h4> Подтверждено публичной статистикой:</h4>
+							<p>В среднем 15 дней в месяц акции дают возможность совершить сделку. <br> Забрать от 5% прибыли в каждый из этих дней – легко!</p><a class="btn btn-primary" href="#">Хочу зарабатывать прибыль от 5% за день</a>
 						</div>
 					</div>
 				</section>
@@ -78,10 +156,38 @@
 				<!-- start sCreate-->
 				<section class="sCreate section" id="sCreate">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sCreate</h2>
+						<div class="section-title">
+							<h2>Создавайте <span>умных</span> торговых роботов в неограниченном количестве с помощью <span>Нейробота!</span></h2>
+							<p>Нейробот – это: </p>
 						</div>
-						<div class="sCreate__row row">
+						<div class="sCreate__slider slider-auto-js swiper">
+							<div class="swiper-wrapper">
+								<div class="sCreate__item swiper-slide">Cоветник для торговой платформы  Metatrader 5
+								</div>
+								<div class="sCreate__item swiper-slide">Конструктор нейросетевых торговых стратегий
+								</div>
+								<div class="sCreate__item swiper-slide"> Автоматизированный пункт управления портфелем нейросетевых торговых роботов
+								</div>
+							</div>
+						</div>
+						<div class="sCreate__frame-wrap">
+							<div class="sCreate__frame"><img class="d-none d-lg-block" src="img/frame2-img.png" alt=""/>
+								<h3> Нейробот – авторская разработка Владимира Чамина для создания умного источника дохода</h3>
+								<p>Создан, чтобы Вы могли быстро обучить нейронную сеть для любого актива.</p>
+							</div>
+						</div>
+						<h3>Нейробот решит эти задачи в несколько кликов мышки:</h3><br/>
+						<ul>
+							<li>Одним разом обучит десятки тысяч нейронных сетей на ценовых данных любого актива.</li>
+							<li>Протестирует каждую из них на незнакомых данных и поможет выбрать лучшие.</li>
+							<li>Создаст торговую стратегию из обученной нейросети и автоматически подберет для нее оптимальные параметры</li>
+							<li>Даст возможность тонкой донастройки параметров стратегии для ее усиления</li>
+							<li>Запустит в автоматические торги портфель роботов с разными нейросетями внутри</li>
+							<li>Будет мониторить каждого робота в отдельности и предупредит Вас, если какой-то из них начнет ломаться из-за изменившегося рынка</li>
+							<li>Обеспечит надежность и защитит депозит от слива и глубоких просадок</li>
+						</ul>
+						<div class="section-footer">
+							<p>Нейробот – умный помощник, который делает за Вас 90% работы по созданию автоматического источника дохода.</p><a class="btn btn-primary" href="#">Жмите, чтобы получить Нейробот прямо сейчас </a>
 						</div>
 					</div>
 				</section>
@@ -89,10 +195,57 @@
 				<!-- start sModern-->
 				<section class="sModern section" id="sModern">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sModern</h2>
+						<div class="section-title">
+							<h2>Современные технологии умного алгоритмического трейдинга</h2>
 						</div>
-						<div class="sModern__row row">
+						<div class="sModern__slider sModern__slider--js swiper slider-auto-js">
+							<div class="swiper-wrapper">
+									<div class="sModern__slide swiper-slide">
+										<div class="sModern-item bg-wrap"><img class="img-bg" src="img/modern-img-1.png" alt="" lazy="loading"/>
+											<h4>Внутри Нейробота настоящая нейронная сеть с двумя скрытыми слоями. </h4>
+											<p>Она хорошо распознает скрытые ценовые паттерны и сразу создает на их основе автоматическую торговую стратегию. Тип нейронной сети: многослойный персептрон из 4-х слоев, всего 63 параметра.</p>
+										</div>
+									</div>
+									<div class="sModern__slide swiper-slide">
+										<div class="sModern-item bg-wrap"><img class="img-bg" src="img/modern-img-2.png" alt="" lazy="loading"/>
+											<h4>Нейробот обучает нейронную сеть непосредственно на данных Вашего актива!</h4>
+											<p>Никаких предобученных алгоритмов. Нейросеть будет настраивать свои веса и искать скрытые паттерны именно на Вашем активе. <br>Все происходит буквально в пару кликов мышки, Вам понадобится только Metatrader 5.</p>
+										</div>
+									</div>
+									<div class="sModern__slide swiper-slide">
+										<div class="sModern-item bg-wrap"><img class="img-bg" src="img/modern-img-3.png" alt="" lazy="loading"/>
+											<h4>Нейробот обучает сразу тысячи разных нейросетей. </h4>
+											<p>После обучения используется алгоритм тройного тестирования, позволяющий отобрать самые прибыльные варианты, которые показывают лучшие результаты на незнакомых для нейросети данных</p>
+										</div>
+									</div>
+									<div class="sModern__slide swiper-slide">
+										<div class="sModern-item bg-wrap"><img class="img-bg" src="img/modern-img-4.png" alt="" lazy="loading"/>
+											<h4>Уникальное сочетание классики трейдинга с новейшими технологиями.</h4>
+											<p>Классические торговые стратегии работают уже более 100 лет и будут работать всегда, пока существуют финансовые рынки. Нейросети появились недавно и открыли для трейдеров недоступные ранее возможности.</p>
+										</div>
+									</div>
+							</div>
+						</div>
+						<div class="section-footer">
+							<h3 class="text-primary text-center">Фишка Нейробота: комбинация обоих подходов  в&nbsp;одной торговой стратегии.</h3>
+						</div>
+						<div class="sModern__slider sModern__slider--js swiper slider-auto-js">
+							<div class="swiper-wrapper">
+									<div class="sModern__slide swiper-slide">
+										<div class="step-item">
+											<h4>Нейронная сеть определяет скрытый паттерн и сигнализирует о входе в сделку.</h4>
+										</div>
+									</div>
+									<div class="sModern__slide swiper-slide">
+										<div class="step-item">
+											<h4>Классический трендовый фильтр выдает свое мнение о точке входа и либо разрешает открыть сделку, либо отбраковывает ее, как сделку против основной тенденции.</h4>
+										</div>
+									</div>
+							</div>
+						</div>
+						<div class="text-center section-footer">
+							<h4>Нелинейный алгоритм открытия сделок + линейный фильтр, который часть сделок не пропускает.<br/>	Такой подход работает гораздо лучше каждого из них по отдельности!</h4><br/>
+							<h4 class="text-secondary">Позвольте умным технологиям зарабатывать для Вас деньги!</h4><br/><a class="btn btn-primary" href="#">Мне нужен нейросетевой источник дохода </a>
 						</div>
 					</div>
 				</section>
@@ -100,22 +253,201 @@
 				<!-- start sKey-->
 				<section class="sKey section" id="sKey">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>sKey</h2>
+						<div class="section-title">
+							<div class="h1">Ключ  к суперсиле</div>
+							<h2>Откройте <span>новые возможности</span> в&nbsp;трейдинге с Нейроботом!</h2>
+							<p><span class="text-primary">Откройте новые возможности в трейдинге с Нейроботом!</span> Это универсальный конструктор, позволяющий быстро обучить нейронную сеть на данных любого актива, доступного у Вас в&nbsp;Metatrader 5.</p>
 						</div>
-						<div class="sKey__row row">
+						<div class="sKey__panel sKey__panel--bg">
+							<div class="sKey__inner">
+								<h4>Создавайте прибыльные торговые стратегии там, где не удается создать другие типы стратегий (трендовые, циклические и т.д.).</h4>
+								<div class="sKey__slider sKey__slider--js swiper slider-auto-js">
+									<div class="sKey__grid swiper-wrapper">
+										<div class="sKey__slide swiper-slide">
+											<div class="sKey-item">
+												<p class="strong">Например, вот так выглядит кривая доходности классической трендовой стратегии на рынке Форекс (валютная пара USD/JPY).</p>
+												<div class="sKey-item__img-wrap"><img class="res-i" src="img/graf-1.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+										<div class="sKey__slide swiper-slide">
+											<div class="sKey-item">
+												<p class="strong">А это кривая доходности нейросетевой стратегии на том же активе.</p>
+												<div class="sKey-item__img-wrap"><img class="res-i" src="img/graf-2.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h4>Достаточно наглядно?</h4>
+								<p>С помощью Нейробота можно создавать автоматические прибыльные стратегии даже на тех рынках, где раньше можно было торговать только вручную.</p>
+							</div>
+						</div>
+						<div class="sKey__panel sKey__panel--bg">
+							<div class="sKey__inner">
+								<h4>Генерируйте торговые стратегии в неограниченном количестве.</h4>
+								<p>Создавайте торговые стратегии с разными нейросетями внутри, на разных рынках и активах, на разных таймфреймах.  Если со временем какая-то из стратегий перестанет приносить прибыль, ее не жалко выкинуть из портфеля. У Вас всегда есть, чем ее заменить.</p>
+								<p class="fw-600">Нейробот – бесконечный источник прибыльных торговых стратегий.</p>
+							</div>
+						</div>
+						<div class="sKey__panel sKey__panel--bg">
+							<div class="sKey__inner">
+								<h4>Создавайте стратегии с более плавным ростом депозита</h4>
+								<p>Это фишка нейросетевых стратегий. Скрытые паттерны, которые они используют, позволяют добиться более стабильного роста капитала, чем у других типов торговых стратегий.</p>
+								<div class="sKey__slider sKey__slider--js swiper slider-auto-js">
+									<div class="sKey__grid swiper-wrapper">
+										<div class="sKey__slide swiper-slide">
+											<div class="sKey-item">
+												<p class="strong">Кривая роста депозита трендовой стратегии на фьючерсе доллар/рубль</p>
+												<div class="sKey-item__img-wrap"><img class="res-i" src="img/graf-3.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+										<div class="sKey__slide swiper-slide">
+											<div class="sKey-item">
+												<p class="strong">Кривая роста депозита нейросетевой стратегии на фьючерсе доллар/рубль</p>
+												<div class="sKey-item__img-wrap"><img class="res-i" src="img/graf-4.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+										<div class="sKey__slide swiper-slide">
+											<div class="sKey-item">
+												<p class="strong">Кривая роста депозита трендовой стратегии на индексе Nasdaq</p>
+												<div class="sKey-item__img-wrap"><img class="res-i" src="img/graf-5.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+										<div class="sKey__slide swiper-slide">
+											<div class="sKey-item">
+												<p class="strong">Кривая роста депозита нейросетевой стратегии на индексе Nasdaq</p>
+												<div class="sKey-item__img-wrap"><img class="res-i" src="img/graf-6.png" alt="" loading="lazy"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h4 class="text-center">Плавность нейросетевых стратегий – это не только меньшие риски и более стабильная прибыль, это еще и прямой путь к росту доходности.</h4>
+							</div>
+						</div>
+						<div class="sKey__slider sKey__slider--cards sKey__slider--js swiper slider-auto-js">
+							<div class="sKey__card-row swiper-wrapper">
+								<div class="sKey__slide swiper-slide">
+									<div class="card-item card-gradient">
+										<div class="card-item__img-wrap"><img src="img/card-1.svg" alt="" loading="lazy"/>
+										</div>
+										<h4>Быстро запускайте в работу автоматические источники дохода</h4>
+										<p>Ставьте стратегию в автоматическую торговлю сразу после ее создания с помощью Нейробота.</p>
+									</div>
+								</div>
+								<div class="sKey__slide swiper-slide">
+									<div class="card-item card-gradient">
+										<div class="card-item__img-wrap"><img src="img/card-2.svg" alt="" loading="lazy"/>
+										</div>
+										<h4>Будьте всегда в курсе, что происходит с Вашими роботами.</h4>
+										<p>Нейробот будет присылать уведомления (об открытии позиций, о необходимости снять стратегию) прямо Вам в Телеграм. Вы не пропустите важную информацию.</p>
+									</div>
+								</div>
+								<div class="sKey__slide swiper-slide">
+									<div class="card-item card-gradient">
+										<div class="card-item__img-wrap"><img src="img/card-3.svg" alt="" loading="lazy"/>
+										</div>
+										<h4>Тонко настраивайте свои стратегии, выжимайте из них максимум прибыли.</h4>
+										<p>Добавляйте в стратегию линейные фильтры сделок, настраивайте риск-менеджмент, защиту от просадок и т.д. <br> Нейробот может автоматически подбирать лучшие варианты для каждого из параметров торговой стратегии.</p>
+									</div>
+								</div>
+								<div class="sKey__slide swiper-slide">
+									<div class="card-item card-gradient">
+										<div class="card-item__img-wrap"><img src="img/card-4.svg" alt="" loading="lazy"/>
+										</div>
+										<h4>Управляйте армией умных торговых роботов.</h4>
+										<p>Торгуйте параллельно портфелем торговых роботов на одном или нескольких активах. <br> Вопрос стабильной прибыли в автоматическом трейдинге решается только с помощью портфеля.</p>
+									</div>
+								</div>
+								<div class="sKey__slide swiper-slide">
+									<div class="card-item card-gradient">
+										<div class="card-item__img-wrap"><img src="img/card-5.svg" alt="" loading="lazy"/>
+										</div>
+										<h4>Позвольте Нейроботу зарабатывать для Вас деньги, даже когда Вы спите.</h4>
+										<p>Это и есть финальная задача, которую решает Нейробот. Источник дохода, который работает автоматически, а Вы на 100% уверены в его надежности.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center section-footer">
+							<h4 class="text-secondary">Готовы получить суперсилу в мире трейдинга?</h4><br/><a class="btn btn-primary" href="#">Жмите, чтобы забрать своего Нейробота прямо сейчас </a>
 						</div>
 					</div>
+					<!-- end sKey-->
 				</section>
-				<!-- end sKey-->
 				<!-- start sCharacteresticks-->
 				<section class="sCharacteresticks section" id="sCharacteresticks">
 					<div class="container">
 						<div class="section-title text-center">
-							<h2>sCharacteresticks</h2>
+							<h2>Характеристики <span>Нейробота</span></h2>
 						</div>
-						<div class="sCharacteresticks__row row">
-						</div>
+						<table>
+									<tr>
+										<td>
+											<h4>Рынки:</h4>
+										</td>
+										<td>
+											<div class="sCharacteresticks__inner">
+												<div class="label">Фьючерсы Мосбиржи</div>
+												<div class="label">Криптовалюты</div>
+												<div class="label">Форекс</div>
+												<div class="label">Индексы</div>
+												<div class="label">Акции</div>
+												<div class="label">Металлы</div>и т.д.
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h4>Реализованные  в&nbsp;Нейроботе функции</h4>
+										</td>
+										<td>
+											<ul>
+												<li>Модуль обучения нейросети с помощью генетического алгоритма.</li>
+												<li>Нейросеть – четырехслойный персептрон, 64 параметра.</li>
+												<li>Тройное тестирование при создании торговой стратегии.</li>
+												<li>Автоматическое создание торговых стратегий на основе нейросети.
+													<ol>
+														<li>Тест на этапе обучения нейронной сети.</li>
+														<li>Форвард-тест на данных, которые нейросеть не знала.</li>
+														<li>Валидация – симуляция реальной торговли на дополнительных данных.</li>
+													</ol>
+												</li>
+												<li>Функция фильтрации сделок для усиления торговой стратегии: TrendX, antiTrendX.</li>
+												<li>Управление роботом по значению профит-фактора.</li>
+												<li>Телеграм-уведомления о сделках и событиях с роботами в портфеле.</li>
+												<li>Настраиваемые стоп и тейк-профит: фиксированный, скользящий, в пунктах, на основе ATR.</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h4>Управление рисками  и&nbsp;защита депозита</h4>
+										</td>
+										<td> 
+											<ul>
+												<li>Два метода управления капиталом:
+													<ol>
+														<li>фиксированный объем, </li>
+														<li>риск на сделку</li>
+													</ol>
+												</li>
+												<li>Функция защиты от глубоких просадок (компрессия просадки).</li>
+												<li>Три уровня защиты депозита:
+													<ol>
+														<li>риск на сделку;</li>
+														<li>риск на стратегию;</li>
+														<li>риск на депозит;</li>
+													</ol>
+												</li>
+											</ul>
+										</td>
+									</tr>
+						</table>
 					</div>
 				</section>
 				<!-- end sCharacteresticks-->

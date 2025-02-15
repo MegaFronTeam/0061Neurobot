@@ -3,7 +3,14 @@ mixin sRealSlider(data)
 	+b.SECTION.sRealSlider.section#sRealSlider&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sRealSlider
-				
-			+e.row.row
+				p Смотрите, в какие шикарные сделки вошла нейронная сеть с помощью своих скрытых паттернов.
+				h3 Это реальные сделки, совершенные Нейроботом:
+			+defSlider()
+				- for (var i = 0; i < 3; i++) 
+					//- +e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/st-review-${i}.png`): +img(`img/st-review-${i}.png`).res-i
+					+e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/slide.png`): +img(`img/slide.png`).res-i
+			+e.footer.text-center
+				h4  Подтверждено публичной статистикой:
+				p В среднем 15 дней в месяц акции дают возможность совершить сделку. <br> Забрать от 5% прибыли в каждый из этих дней – легко!
+				a.btn.btn-primary(href="#") Хочу зарабатывать прибыль от 5% за день
 	// end sRealSlider
