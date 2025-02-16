@@ -8,7 +8,8 @@ mixin sRealSlider(data)
 			+defSlider()
 				- for (var i = 0; i < 3; i++) 
 					//- +e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/st-review-${i}.png`): +img(`img/st-review-${i}.png`).res-i
-					+e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/slide.png`): +img(`img/slide.png`).res-i
+					+e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/slide.png`)
+						img(src="img/slide.png" width="640" height="389" alt="").res-i 
 			+e.footer.text-center
 				h4  Подтверждено публичной статистикой:
 				p В среднем 15 дней в месяц акции дают возможность совершить сделку. <br> Забрать от 5% прибыли в каждый из этих дней – легко!

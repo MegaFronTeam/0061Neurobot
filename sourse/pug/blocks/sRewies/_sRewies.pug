@@ -8,5 +8,6 @@ mixin sRewies(data)
 			+defSlider()
 				- for (var i = 0; i < 3; i++) 
 					//- +e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/st-review-${i}.png`): +img(`img/st-review-${i}.png`).res-i
-					+e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/review.png`): +img(`img/review.png`).res-i
+					+e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/review.png`)
+						img(src="img/review.png" width="709" height="553" alt="").res-i  
 	// end sRewies
