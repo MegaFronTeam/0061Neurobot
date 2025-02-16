@@ -2,8 +2,51 @@ mixin sProfitability(data)
 	// start sProfitability
 	+b.SECTION.sProfitability.section#sProfitability&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sProfitability
-				
-			+e.row.row
+			+b.section-title
+				h2 На какую #[span доходность] можно рассчитывать?
+				h3 Вы можете настраивать торговых роботов на необходимую Вам доходность, учитывая риски и полученную максимальную просадку на исторических тестах.
+
+			+e.frame
+				.row
+					+e.col.col-lg-6
+						p Диверсификация рисков, а также увеличение общей доходности достигается за счет параллельной торговли портфелем роботов на одном или разных активах.
+						+e.footer
+							p.text-secondary Пример: 
+							h3 3&nbsp;торговых робота  со&nbsp;средней доходностью  20% в&nbsp;год в&nbsp;сумме  принесут Вам  #[span.text-primary 60% годовых.]
+						img(src="img/sProfitability-img.png", alt="")
+					+e.col.col-lg-6
+						p Вилка адекватной доходности в алгоритмическом трейдинге:
+						+e.footer
+							h3 
+								span.d-block.text-primary 30-100%  годовых  
+								| с&nbsp;максимальной  просадкой 10-30%
+						img(src="img/sProfitability-img-2.png", alt="")
+			h3.mb-64 Вот такие торговые стратегии позволяет создавать Нейробот:
+
+			+e.slider--cards.--js.swiper.slider-auto-js
+				+e.card-row.swiper-wrapper
+					mixin card(i,t,p)
+						+e.slide.swiper-slide
+							+e.item(data-fancybox='modal-slider-sProfitability' data-src=`img/graf-pr.png`)
+								+e.img-wrap
+									+img(`img/graf-pr.png`).res-i
+								+e.title= t
+					+card(`1`,`Стратегия для валютной пары USD/JPY`)
+					+card(`2`,`Стратегия для валютной пары USD/JPY`)
+					+card(`3`,`Стратегия для валютной пары USD/JPY`)
+					+card(`4`,`Стратегия для валютной пары USD/JPY`) 
+					+card(`5`,`Стратегия для валютной пары USD/JPY`)
+					+card(`6`,`Стратегия для валютной пары USD/JPY`)
+					+card(`7`,`Стратегия для валютной пары USD/JPY`)
+					+card(`8`,`Стратегия для валютной пары USD/JPY`) 
+			+e.row-video
+				+e.video-item
+					iframe(src="https://kinescope.io/4xKqQdWVYxte9eegVPYXPK")
+					
+				+e.video-item
+					iframe(src="https://kinescope.io/mLhP1gC7UEpMRCUz9z8AK8")
+			.section-footer.text-center
+				h4.text-secondary   Хотите создать свой собственный портфель умных роботов, который на полном автомате приносит такую доходность?
+				br
+				a.btn.btn-primary(href="#") Жмите, чтобы забрать Нейробот сейчас
 	// end sProfitability

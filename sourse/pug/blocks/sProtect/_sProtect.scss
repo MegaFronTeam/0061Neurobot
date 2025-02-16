@@ -3,26 +3,48 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
-	
-	&__row{
-		// --bs-gutter-x: #{rem()};
-		// --bs-gutter-y: #{rem()};
+
+	.container {
+		position: relative;
+		z-index: 2;
+		&::before {
+			/* Ellipse 35 */
+			content: "";
+			z-index: -1;
+			position: absolute;
+			width: 792.03px;
+			height: 792.03px;
+			left: -464.78px;
+			top: 689.97px;
+
+			background: #6346e4;
+			filter: blur(445px);
+		}
 	}
-	.section-title{
-		
+	&__row {
+		--bs-gutter-x: #{rem(40)};
+		--bs-gutter-y: #{rem(30)};
+		margin-bottom: rem(64);
 	}
-	&__col{
-		
+	.section-title {
 	}
-	&__item{
-		
+	&__col {
+	}
+	&__item {
 	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sProtect

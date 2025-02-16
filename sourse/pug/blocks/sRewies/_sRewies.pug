@@ -3,7 +3,10 @@ mixin sRewies(data)
 	+b.SECTION.sRewies.section#sRewies&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sRewies
-				
-			+e.row.row
+				h4.text-secondary Вот, что они говорят про разработки Владимира Чамина:
+
+			+defSlider()
+				- for (var i = 0; i < 3; i++) 
+					//- +e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/st-review-${i}.png`): +img(`img/st-review-${i}.png`).res-i
+					+e.slide.swiper-slide(data-fancybox='modal-slider-rev' data-src=`img/review.png`): +img(`img/review.png`).res-i
 	// end sRewies
